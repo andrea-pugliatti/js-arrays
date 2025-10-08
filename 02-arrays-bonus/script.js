@@ -17,6 +17,7 @@ const reversedTeachers = teachers.toReversed();
 const longNames = teachers.filter((teacher) => teacher.length >= 5);
 
 // 3. Rimuovi 'Ed' dall'array teachers
+teachers.splice(1, 1);
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
