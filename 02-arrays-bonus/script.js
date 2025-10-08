@@ -45,9 +45,10 @@ for (let i = 0; i < teachers.length; i++) {
 // const teachersString = teachers.toString();
 // oppure const teachersString = teachers.join(", ");
 let teachersString = "";
-for (let i = 0; i < teachers.length - 1; i++) {
+for (let i = 0; i < teachers.length; i++) {
   teacher = teachers[i];
   teachersString += teacher;
-  teachersString += ", ";
+  if (i !== teachers.length - 1) {
+    teachersString += ", ";
+  }
 }
-teachersString += teachers[teachers.length - 1];
