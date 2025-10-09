@@ -13,7 +13,8 @@ const teachers = [
 // const reversedTeachers = teachers.toReversed();
 const reversedTeachers = [];
 for (let i = teachers.length - 1; i >= 0; i--) {
-  reversedTeachers.push(teachers[i]);
+  const teacher = teachers[i];
+  reversedTeachers.push(teacher);
 }
 
 // 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
@@ -28,7 +29,7 @@ for (let i = 0; i < teachers.length; i++) {
 }
 
 // 3. Rimuovi 'Ed' dall'array teachers
-// teachers.splice(1, 1);
+// teachers.splice(teachers.indexOf('Ed'), 1);
 const teachersTemp = [];
 for (let i = 0; i < teachers.length; i++) {
   const teacher = teachers[i];
@@ -37,6 +38,10 @@ for (let i = 0; i < teachers.length; i++) {
   }
 }
 // teachers = teachersTemp;
+teachers.length = teachersTemp.length
+for (let i = 0; i < teachersTemp.length; i++) {
+  teachers[i] = teachersTemp[i];
+}
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
