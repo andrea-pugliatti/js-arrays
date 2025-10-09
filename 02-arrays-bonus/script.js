@@ -38,7 +38,7 @@ for (let i = 0; i < teachers.length; i++) {
   }
 }
 // teachers = teachersTemp;
-teachers.length = teachersTemp.length
+teachers.length = teachersTemp.length;
 for (let i = 0; i < teachersTemp.length; i++) {
   teachers[i] = teachersTemp[i];
 }
@@ -51,6 +51,7 @@ for (let i = 0; i < teachers.length; i++) {
   const teacher = teachers[i];
   if (teacher === "Fabio") {
     isFabioPresent = true;
+    break;
   }
 }
 
