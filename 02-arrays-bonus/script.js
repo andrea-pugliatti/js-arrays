@@ -54,7 +54,7 @@ for (let i = 0; i < teachers.length; i++) {
 // oppure const teachersString = teachers.join(", ");
 let teachersString = "";
 for (let i = 0; i < teachers.length; i++) {
-  teacher = teachers[i];
+  const teacher = teachers[i];
   teachersString += teacher;
   if (i !== teachers.length - 1) {
     teachersString += ", ";
